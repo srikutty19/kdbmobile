@@ -3,8 +3,8 @@
     xmlns:gap = "http://phonegap.com/ns/1.0"
     xmlns:android = "http://schemas.android.com/apk/res/android"
     id        = "kmrs.mobile.app"
-    versionCode = "25"
-    version   = "2.5">
+    versionCode = "22"
+    version   = "2.2">
     <name>Karenderia Mobile App</name>
     <description>
         Karenderia mobile app version
@@ -67,7 +67,7 @@
         </application>        
     </gap:config-file> 
 	            
-    <preference name="phonegap-version" value="cli-7.1.0" />     
+    <preference name="phonegap-version" value="cli-8.0.0" />     
     <gap:plugin name="cordova-plugin-camera" source="npm" spec="2.4.1" />
     <gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.2" /> 
     <gap:plugin spec="https://github.com/danwilson/google-analytics-plugin.git" source="git" />     
