@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     xmlns:android = "http://schemas.android.com/apk/res/android"
-    id        = "kdb.mobile.app"
+    id        = "kmrs.mobile.app"
     versionCode = "22"
     version   = "2.2">
     <name>Kdb Mobile App</name>
@@ -15,11 +15,14 @@
     <content src="index.html" />
                
 	<preference name="orientation" value="portrait" />
-	<preference name="android-build-tool" value="gradle" />		
+	<preference name="android-build-tool" value="gradle" />	
+	<preference name="permissions" value="none"/>	
 		
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	
-    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.10.5"  /> 
+    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.10.0" >
+      <param name="SENDER_ID" value="" />
+    </gap:plugin>
     
     <gap:plugin name="com.paypal.cordova.mobilesdk" source="npm"  />            	
     <gap:plugin name="cordova-plugin-device" source="npm" />		
@@ -35,8 +38,8 @@
 	<gap:plugin name="cordova-plugin-media" source="npm" spec="3.0.0" />	
 	<gap:plugin name="cordova.plugins.diagnostic" source="npm" spec="3.7.1" />	
 		
-	<gap:plugin name="cordova-plugin-googlemaps-plus" source="npm" >
-       <param name="API_KEY_FOR_ANDROID" value="AIzaSyAHHCxBsBN18weReLG2mIzgJqmyWyDuPzY" />
+<gap:plugin name="cordova-plugin-googlemaps"  source="npm" spec="1.3.9" >
+       <param name="API_KEY_FOR_ANDROID" value="" />
        <param name="API_KEY_FOR_IOS" value="" />
        <param name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Karenderia wants to use your location" />
        <param name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Karenderia want to always use your location" />
@@ -52,9 +55,9 @@
     <platform name="ios" /> 
     		    
 	<preference name="AutoHideSplashScreen" value="false" />  	
-    <preference name="SplashScreenDelay" value="10000" />    
+    <preference name="SplashScreenDelay" value="5000" />    
     <preference name="fullscreen" value="false" />
-    <preference name="android-minSdkVersion" value="19" />     
+    <preference name="android-minSdkVersion" value="16" />     
     <preference name="ShowSplashScreenSpinner" value="false" />	   
     
     <access origin="*" />
@@ -66,7 +69,6 @@
         </application>        
     </gap:config-file> 
 	            
-    <preference name="phonegap-version" value="cli-7.1.0" />     
     <gap:plugin name="cordova-plugin-camera" source="npm" spec="2.4.1" />
     <gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.2" /> 
     <gap:plugin spec="https://github.com/danwilson/google-analytics-plugin.git" source="git" />     
