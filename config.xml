@@ -46,16 +46,15 @@
     </gap:plugin>
     
     <gap:plugin name="cordova-plugin-buildinfo" source="npm" spec="1.1.0"  />
-    
-    <plugin spec="https://github.com/EddyVerbruggen/cordova-plugin-googleplus.git" source="git">
-  <variable name="REVERSED_CLIENT_ID" value="" />
-  <variable name="WEB_APPLICATION_CLIENT_ID" value="" />
-<plugin>
+    <gap:plugin name="cordova-plugin-googleplus" source="npm">
+     <variable name="REVERSED_CLIENT_ID" value="" />
+    </gap:plugin>
+ 
 		
     <platform name="android" />    
     <platform name="ios" /> 
     		    
-	<preference name="AutoHideSplashScreen" value="false" />  	
+    <preference name="AutoHideSplashScreen" value="false" />  	
     <preference name="SplashScreenDelay" value="5000" />    
     <preference name="fullscreen" value="false" />
     <preference name="android-minSdkVersion" value="16" />     
@@ -72,7 +71,6 @@
 	            
     <gap:plugin name="cordova-plugin-camera" source="npm" spec="2.4.1" />
     <gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.2" /> 
-    <gap:plugin spec="https://github.com/danwilson/google-analytics-plugin.git" source="git" />     
 
     <platform name="ios">    
 	    <config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
