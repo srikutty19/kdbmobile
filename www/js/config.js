@@ -3,6 +3,6 @@ var krms_config ={
 	'DialogDefaultTitle':"kovaiDeliveryBoys",	
 	'pushNotificationSenderid':"465251440510",	
 	'facebookAppId':"882934511907337",
-	'APIHasKey':""
+	'APIHasKey':"fdc520d2bb339d76e8c95bc0f2432538"
 };
 
